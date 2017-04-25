@@ -1,0 +1,89 @@
+<?xml version='1.0' encoding='ASCII'?>
+<Dataset>
+  <recipe>
+    <recipe_ID>45809</recipe_ID>
+    <category>Chicken Breast</category>
+    <link>http://www.food.com/recipe/bourbon-chicken-45809
+</link>
+    <recipe_name>Bourbon Chicken</recipe_name>
+    <rate>4.59</rate>
+    <vote>2954</vote>
+    <cook_time>35mins</cook_time>
+    <serving>4</serving>
+    <list_ingredient>
+      <ingredient>2  lbs  boneless chicken breasts, cut into bite-size pieces</ingredient>
+      <ingredient>1 -2  tablespoon  olive oil</ingredient>
+      <ingredient>1  garlic clove, crushed</ingredient>
+      <ingredient>1/4 teaspoon  ginger</ingredient>
+      <ingredient>3/4 teaspoon  crushed red pepper flakes</ingredient>
+      <ingredient>1/4 cup  apple juice</ingredient>
+      <ingredient>1/3 cup  light brown sugar</ingredient>
+      <ingredient>2  tablespoons  ketchup</ingredient>
+      <ingredient>1  tablespoon  cider vinegar</ingredient>
+      <ingredient>1/2 cup  water</ingredient>
+      <ingredient>1/3 cup  soy sauce</ingredient>
+    </list_ingredient>
+    <list_direction>
+      <direction>Editor's Note:  Named Bourbon Chicken because it was supposedly created by a Chinese cook who worked in a restaurant on Bourbon Street.</direction>
+      <direction>Heat oil in a large skillet.</direction>
+      <direction>Add chicken pieces and cook until lightly browned.</direction>
+      <direction>Remove chicken.</direction>
+      <direction>Add remaining ingredients, heating over medium Heat until well mixed and dissolved.</direction>
+      <direction>Add chicken and bring to a hard boil.</direction>
+      <direction>Reduce heat and simmer for 20 minutes.</direction>
+      <direction>Serve over hot rice and ENJOY.</direction>
+    </list_direction>
+  </recipe>
+  <recipe>
+    <recipe_ID>27208</recipe_ID>
+    <category>One Dish Meal</category>
+    <link>http://www.food.com/recipe/to-die-for-crock-pot-roast-27208
+</link>
+    <recipe_name>To Die for Crock Pot Roast</recipe_name>
+    <rate>4.58</rate>
+    <vote>1647</vote>
+    <cook_time>9hrs5mins</cook_time>
+    <serving>8</serving>
+    <list_ingredient>
+      <ingredient> </ingredient>
+      <ingredient>1 (1 1/4 ounce) package brown gravy mix, dry</ingredient>
+      <ingredient>1 (1 1/4 ounce) package dried Italian salad dressing mix</ingredient>
+      <ingredient>1 (1 1/4 ounce) package ranch dressing mix, dry</ingredient>
+      <ingredient>1/2 cup  water</ingredient>
+    </list_ingredient>
+    <list_direction>
+      <direction>Place beef roast in crock pot.</direction>
+      <direction>Mix the dried mixes together in a bowl and sprinkle over the roast.</direction>
+      <direction>Pour the water around the roast.</direction>
+      <direction>Cook on low for 7-9 hours.</direction>
+      <direction>Use onion soup mix instead of ranch.</direction>
+      <direction>Add one cup,of red wine.</direction>
+      <direction>Add potatoes,carrots,mushrooms,celery and onion 2-3 hours before end.</direction>
+    </list_direction>
+  </recipe>
+  <recipe>
+    <recipe_ID>89204</recipe_ID>
+    <category>One Dish Meal</category>
+    <link>http://www.food.com/recipe/crock-pot-chicken-with-black-beans-cream-cheese-89204
+</link>
+    <recipe_name>Crock-Pot Chicken With Black Beans &amp; Cream Cheese</recipe_name>
+    <rate>4.46</rate>
+    <vote>1631</vote>
+    <cook_time>4hrs3mins</cook_time>
+    <serving>4</serving>
+    <list_ingredient>
+      <ingredient>4 -5  boneless chicken breasts, frozen</ingredient>
+      <ingredient>1 (15 1/2 ounce) can black beans</ingredient>
+      <ingredient>1 (15  ounce) can corn</ingredient>
+      <ingredient>1 (15  ounce) jar salsa, any kind</ingredient>
+      <ingredient>1 (8  ounce) package cream cheese</ingredient>
+    </list_ingredient>
+    <list_direction>
+      <direction>Take 4-5 frozen, yes, frozen, boneless chicken breasts put into crock pot.</direction>
+      <direction>Add 1 can of black beans, drained, 1 jar of salsa, 1 can of corn drained.</direction>
+      <direction>Keep in crock pot on high for about 4-5 hours or until chicken is cooked.</direction>
+      <direction>Add 1 package of cream cheese (just throw it on top!) and let sit for about 1/2 hour.</direction>
+      <direction>All done and enjoy!</direction>
+    </list_direction>
+  </recipe>
+</Dataset>
