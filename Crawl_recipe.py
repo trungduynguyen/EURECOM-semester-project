@@ -29,7 +29,7 @@ inputfile = open('recipe_list.txt','r')
 #for line in inputfile:
 alllink = inputfile.readlines()
 
-recipelinks = alllink[1000:51000]
+recipelinks = alllink[5000:20000]
 
 
 for i in range(0,len(recipelinks)/500):
@@ -39,7 +39,7 @@ for i in range(0,len(recipelinks)/500):
     for link in recipelinks[i*500: (i+1)*500]:
         link.strip('\n')
         browser = webdriver.Chrome()
-        browser.get(link)
+        browser.get(link+'?scaleto=1.0&st=null&mode=metric')
         soup = BeautifulSoup(browser.page_source, 'html.parser')
         
         recipe_xml = ET.SubElement(Dataset,'recipe')
@@ -90,7 +90,7 @@ for i in range(0,len(recipelinks)/500):
     
     
     obj = ET.tostring(Dataset, pretty_print=True, xml_declaration=True)
-    output = open('./data/output_'+ str(i) +'.xml','w')
+    output = open('./data/new_metric_output_'+ str(i) +'.xml','w')
     output.write(obj)
     output.close()
     
