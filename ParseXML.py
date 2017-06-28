@@ -89,32 +89,38 @@ def Get_key_value(text, ingredient_dict):
 
 
 
+def Convert_to_Dataframe(path,ingredient_dict):
+
+#    tree = ET.parse('data/new_metric_output_1.xml')
+#    root = tree.getroot()
+    
+    tree = ET.parse(path)
+
+    listRate = [ float(idx.text) for idx in tree.findall('.//recipe/rate')]
+    
+    #retrieve key at given index ith
+    #ingredient_dict.keys()[ingredient_dict.values().index(3155)]
+    
+    recipe_data = []
+    list_ingre = tree.findall('.//recipe/list_ingredient')
+    for k in range(0, len(list_ingre)):
+        ingre_vector = np.zeros(len(ingredient_dict))
+        ingre = list_ingre[k].findall('ingredient')
+        for item in ingre:
+            if item.text:
+                ingre_idx , quanti = Get_key_value(item.text, ingredient_dict)
+                if ingre_idx != -1:
+                    ingre_vector[ingre_idx] = quanti
+        recipe_data.append(ingre_vector)
+    
+    
+    columns = sorted(ingredient_dict.keys())
+    listID = [ idx.text for idx in tree.findall('.//recipe/recipe_ID')]
+    recipe_df = pd.DataFrame(recipe_data,columns= columns,index = listID)   
+    recipe_df['rate'] = pd.Series(np.array(listRate),index =recipe_df.index)
+    return recipe_df
 
 
-#tree = ET.parse('data/new_metric_output_0.xml')
-#root = tree.getroot()
-
-
-
-
-#listRate = [ float(idx.text) for idx in tree.findall('.//recipe/rate')]
-
-#retrieve key at given index ith
-#ingredient_dict.keys()[ingredient_dict.values().index(3155)]
-
-#recipe_data = []
-#list_ingre = tree.findall('.//recipe/list_ingredient')
-#for k in range(0, len(list_ingre)):
-#    ingre_vector = np.zeros(len(ingredient_dict))
-#    ingre = list_ingre[k].findall('ingredient')
-#    for item in ingre:
-#        if item.text:
-#            ingre_idx , quanti = Get_key_value(item.text, ingredient_dict)
-#            if ingre_idx != -1:
-#                ingre_vector[ingre_idx] = quanti
-#    recipe_data.append(ingre_vector)
-#
-#
-#columns = sorted(ingredient_dict.keys())
-#listID = [ idx.text for idx in tree.findall('.//recipe/recipe_ID')]
-#recipe_df = pd.DataFrame(recipe_data,columns= columns,index = listID)   
+#for i in range(0,11):
+    #data = Convert_to_Dataframe('./data/new_metric_output_'+str(i)+'.xml',ingredient_dict)
+    #data.to_csv('data/data'+str(i)+'.csv')
